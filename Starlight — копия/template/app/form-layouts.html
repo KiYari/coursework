@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+
+
+  <title>Форма: layouts</title>
+
+  <!-- vendor css -->
+  <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+  <link href="../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+  <link href="../lib/highlightjs/github.css" rel="stylesheet">
+  <link href="../lib/select2/css/select2.min.css" rel="stylesheet">
+
+  <!-- Starlight CSS -->
+  <link rel="stylesheet" href="../css/starlight.css">
+</head>
+
+<body>
+
+  <!-- ########## START: LEFT PANEL ########## -->
+  <div class="sl-logo"><a href=""><i class="icon ion-android-star-outline"></i> starlight</a></div>
+  
+
+    <br>
+
+  <!-- ########## END: LEFT PANEL ########## -->
+
+  <!-- ########## START: HEAD PANEL ########## -->
+  <div class="sl-header">
+    <div class="sl-header-left">
+      <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i class="icon ion-navicon-round"></i></a>
+      </div>
+      <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i
+            class="icon ion-navicon-round"></i></a></div>
+    </div><!-- sl-header-left -->
+    <div class="sl-header-right">
+      <nav class="nav">
+        <div class="dropdown">
+          <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+            <span class="logged-name">Jane<span class="hidden-md-down"> Doe</span></span>
+            <img src="../img/img3.jpg" class="wd-32 rounded-circle" alt="">
+          </a>
+          <div class="dropdown-menu dropdown-menu-header wd-200">
+            <ul class="list-unstyled user-profile-nav">
+              <li><a href="form-layouts.html"><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
+              <li><a href=""><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
+              <li><a href=""><i class="icon ion-ios-download-outline"></i> Downloads</a></li>
+              <li><a href=""><i class="icon ion-ios-star-outline"></i> Favorites</a></li>
+              <li><a href=""><i class="icon ion-ios-folder-outline"></i> Collections</a></li>
+              <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
+            </ul>
+          </div><!-- dropdown-menu -->
+        </div><!-- dropdown -->
+      </nav>
+      <div class="navicon-right">
+        <a id="btnRightMenu" href="" class="pos-relative">
+          <i class="icon ion-ios-bell-outline"></i>
+          <!-- start: if statement -->
+          <span class="square-8 bg-danger"></span>
+          <!-- end: if statement -->
+        </a>
+      </div><!-- navicon-right -->
+    </div><!-- sl-header-right -->
+  </div><!-- sl-header -->
+  <!-- ########## END: HEAD PANEL ########## -->
+
+  <!-- ########## START: RIGHT PANEL ########## -->
+  <div class="sl-sideright">
+    <ul class="nav nav-tabs nav-fill sidebar-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" role="tab" href="#messages">Messages (2)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" role="tab" href="#notifications">Notifications (8)</a>
+      </li>
+    </ul><!-- sidebar-tabs -->
+
+    <!-- Tab panes -->
+
+  </div><!-- sl-sideright -->
+  <!-- ########## END: RIGHT PANEL ########## --->
+
+  <!-- ########## START: MAIN PANEL ########## -->
+  <div class="sl-mainpanel2">
+
+
+    <div class="sl-pagebody">
+
+
+      <div class="sl-page-title">
+        <h5>Личный кабинет</h5>
+
+      </div><!-- sl-page-title -->
+
+      <div class="card pd-20 pd-sm-40">
+        <h6 class="card-body-title">Основная информация</h6>
+
+        <div class="form-layout">
+          <div class="row mg-b-25">
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label">Имя: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="text" name="firstname" value="Александр"
+                  placeholder="Enter firstname">
+              </div>
+            </div><!-- col-4 -->
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label">Фамилия: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="text" name="lastname" value="Александров"
+                  placeholder="Enter lastname">
+              </div>
+            </div><!-- col-4 -->
+            <div class="col-lg-4">
+              <div class="form-group">
+                <label class="form-control-label">Email address: <span class="tx-danger">*</span></label>
+                <input class="form-control" type="text" name="email" value="...@yourdomain.com"
+                  placeholder="Enter email address">
+              </div>
+            </div><!-- col-4 -->
+
+          </div><!-- col-4 -->
+        </div><!-- row -->
+
+        <div class="form-layout-footer">
+          <button class="btn btn-info mg-r-5">Submit Form</button>
+          <button class="btn btn-secondary">Cancel</button>
+        </div><!-- form-layout-footer -->
+      </div><!-- form-layout -->
+    </div>
+
+    <div class="sl-pagebody">
+      <div class="card pd-20 pd-sm-40">
+          <h6 class="card-body-title">Изменение аватара</h6>
+          <div class="row">
+            <div class="col-lg-3">
+              <img class="card-img-top img-fluid" src="../img/img3.jpg" alt="Image">
+                <div class="card-body bd bd-t-0">
+                  <label class="custom-file">
+                    <input type="file" id="file" class="custom-file-input">
+                    <span class="custom-file-control"></span>
+                  </label>
+                </div>
+            </div><!-- col -->
+          </div><!-- row -->
+        </div>
+      </div><!-- card -->
+    </div>
+
+    <div class="sl-pagebody">
+
+      <div class="card pd-20 pd-sm-40">
+        <h6 class="card-body-title">Изменение пароля</h6>
+
+        <form>
+          <div class="wd-300">
+            <div class="d-md-flex mg-b-30">
+              <div class="form-group mg-b-0">
+                <label>Старый пароль: <span class="tx-danger">*</span></label>
+                <input type="text" name="firstname" class="form-control wd-200 wd-sm-250" placeholder="Enter firstname"
+                  required>
+              </div><!-- form-group -->
+              <div class="form-group mg-b-0 mg-md-l-20 mg-t-20 mg-md-t-0">
+                <label>Новый пароль: <span class="tx-danger">*</span></label>
+                <input type="text" name="lastname" class="form-control wd-200 wd-sm-250" placeholder="Enter lastname"
+                  required>
+              </div><!-- form-group -->
+            </div><!-- d-flex -->
+            <button type="submit" class="btn btn-info">Validate Form</button>
+          </div>
+        </form>
+      </div><!-- card -->
+
+    </div><!-- sl-pagebody -->
+
+  </div><!-- sl-mainpanel -->
+  <!-- ########## END: MAIN PANEL ########## -->
+
+  <script src="../lib/jquery/jquery.js"></script>
+  <script src="../lib/popper.js/popper.js"></script>
+  <script src="../lib/bootstrap/bootstrap.js"></script>
+  <script src="../lib/jquery-ui/jquery-ui.js"></script>
+  <script src="../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+  <script src="../lib/highlightjs/highlight.pack.js"></script>
+  <script src="../lib/select2/js/select2.min.js"></script>
+
+  <script src="../js/starlight.js"></script>
+  <script>
+    $(function () {
+      'use strict';
+
+      $('.select2').select2({
+        minimumResultsForSearch: Infinity
+      });
+    })
+  </script>
+</body>
+
+</html>
